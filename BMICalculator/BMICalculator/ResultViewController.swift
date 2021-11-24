@@ -22,6 +22,7 @@ class ResultViewController: UIViewController {
 
         calculateBMI()
     }
+    
     func calculateBMI() {
         
         let heightM = (Double(height) ?? 0.0) / 100
@@ -33,19 +34,19 @@ class ResultViewController: UIViewController {
         if bmi <= 18.5 {
             imgShowHeart.image = UIImage(named: "Happy Heart")
             lblAdvice.text = "You need to gain weight"
-            lblBMISuggestion.text = "Sadly!! Your BMI is Underweight😯"
+            lblBMISuggestion.text = "Ohhh!! Your BMI Is Underweight😯"
         } else if bmi <= 25 {
             imgShowHeart.image = UIImage(named: "Cute Heart")
             lblAdvice.text = "You are Totaly Fit "
-            lblBMISuggestion.text = "Hurray!! Your BMI is Normal🤩"
+            lblBMISuggestion.text = "Hurray!! Your BMI Is Normal🤩"
         } else if bmi <= 30 {
             imgShowHeart.image = UIImage(named: "sad")
             lblAdvice.text = "You need to loose weight "
-            lblBMISuggestion.text = "Sadly!! Your BMI is Overweight😞"
+            lblBMISuggestion.text = "Sadly!! Your BMI Is Overweight😞"
         } else {
             imgShowHeart.image = UIImage(named: "crying")
-            lblAdvice.text = "Sadly!! You need to loose weight & take healthy food only😢"
-            lblBMISuggestion.text = "Your BMI is Obese"
+            lblAdvice.text = "Ohh No!! You need to loose weight & take healthy food only😢"
+            lblBMISuggestion.text = "Your BMI Is Obese"
         }
         
     }
